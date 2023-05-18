@@ -13,6 +13,8 @@ binRouter.get("/", async (req, res) => {
     } catch (err) {
         return res.status(500).json({ errors: err})
     }
+    //trying to figure out if I need a post request here since
+    //I will be creating a form.  Just not sure if it will live here or a nested router
 })
 
 export default binRouter

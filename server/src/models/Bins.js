@@ -13,7 +13,8 @@ class Bins extends Model {
                 location: {type: "integer"},//still unsure
                 company: {type: "string"},
                 neighborhood: {type: "string"},
-                imgUrl: {type: ["string"]}
+                imgUrl: {type: ["string"]},
+                relatedInfo: {type: "text"}
             }
         }
     }
