@@ -11,4 +11,4 @@
 - see item list on bin show page 
 - be able to delete items from bin 
 
-- styling 
+-styling
