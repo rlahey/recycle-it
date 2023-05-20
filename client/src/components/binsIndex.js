@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
-import { Link } from "react-router-dom";
+import BinTile from "../components/binTile.js"
 
-const binsIndex = props => {
+const binsIndex = (props) => {
     const [bins, setBins] = useState([])
 
     const getBins = async() => {
@@ -23,7 +23,7 @@ const binsIndex = props => {
         getBins()
     }, [])
 
-    const binTiles = props.bins.map(bin => {
+    const binTiles = bins.map(bin => {
         return(
         <BinTile
             key={bin.id}

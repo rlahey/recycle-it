@@ -17,6 +17,9 @@ exports.up = async (knex) => {
       table.bigIncrements("id");
       table.string("email").notNullable().unique();
       table.string("cryptedPassword").notNullable();
+      table.string("userName").notNullable()
+      table.string("neighborhood")
+      table.integer("location")
       table.timestamp("createdAt").notNullable().defaultTo(knex.fn.now());
       table.timestamp("updatedAt").notNullable().defaultTo(knex.fn.now());
     });

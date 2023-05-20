@@ -1,6 +1,6 @@
 const Model = require("./Model")
 
-class Bins extends Model {
+class Bin extends Model {
     static get tableName() {
         return "bins"
     }
@@ -8,7 +8,7 @@ class Bins extends Model {
     static get jsonSchema() {
         return{
             type: "object",
-            required: ["location", "company", "neighborhood", "imgUrl" ],
+            required: ["location", "company", "neighborhood"],
             properties: {
                 location: {type: "integer"},//still unsure
                 company: {type: "string"},
@@ -20,4 +20,4 @@ class Bins extends Model {
     }
 }
 
-Model.exports = Bins
+module.exports = Bin;
