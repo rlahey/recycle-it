@@ -1,8 +1,8 @@
 - finish seeding
-- ensure that seeded bins appear on index page
-- then review code, remove bad code, and commit
-- push up the branch and merge
-- switch to main, and make a new branch for the show page
+- DONE: ensure that seeded bins appear on index page
+- DONE: then review code, remove bad code, and commit
+- DONE: push up the branch and merge
+- DONE: switch to main, and make a new branch for the show page
 - make show page component and routing 
 
 - change the location column to a string of "address"
