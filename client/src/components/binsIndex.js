@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react"
 import BinTile from "../components/binTile.js"
+//import { Redirect } from "react-router-dom"
 
 const binsIndex = (props) => {
+    //debugger
     const [bins, setBins] = useState([])
 
     const getBins = async() => {
@@ -13,6 +15,7 @@ const binsIndex = (props) => {
                 throw(error)
             }
             const body = await response.json()
+            console.log(body)
             setBins(body.bins)
         } catch(err) {
             console.log(`Error in Fetch: ${err.message}`)
@@ -39,7 +42,7 @@ const binsIndex = (props) => {
 
     return(
         <div>
-            <h1>Drop Off Bins</h1>
+            <h1 className="drop-off-bins">Drop Off Bins</h1>
             {binTiles}
         </div> 
     )
