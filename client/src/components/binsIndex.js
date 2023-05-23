@@ -42,7 +42,7 @@ const binsIndex = (props) => {
 
     return(
         <div>
-            <h1>Drop Off Bins</h1>
+            <h1 className="drop-off-bins">Drop Off Bins</h1>
             {binTiles}
         </div> 
     )

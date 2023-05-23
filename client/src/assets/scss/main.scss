@@ -3,17 +3,50 @@
 @include foundation-everything;
 // place global css here
 
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+.drop-off-bins {
+  color: green;
+  text-align: center;
+}
+
+.bin-info-show-page {
+  color: green;
+  border: solid;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px;
+  width: 50%;
+}
+
 .links {
-  
+  border: solid;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  margin: 30px;
+  background-color: white;
+  color: green
+}
+
+.link-color{
+  color: green
+}
+
+body {
+  background-image: url(https://publicinterestnetwork.org/wp-content/uploads/2021/03/waste_is_out_of_fashion_shutterstock-1500x844.jpg);
+  z-index: -1;
+  font-family: Montserrat, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 }
 
 :root {
   -moz-tab-size: 4;
   tab-size: 4;
 }
+
