@@ -7,7 +7,8 @@ import "../assets/scss/main.scss";
 import RegistrationForm from "./registration/RegistrationForm";
 import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
-import binsIndex from "./binsIndex.js";
+import BinsIndex from "./BinsIndex";
+import BinShow from "./BinShow";
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -33,7 +34,8 @@ const App = (props) => {
         </Route>
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
-        <Route exact path="/bins" component={binsIndex} />
+        <Route exact path="/bins" component={BinsIndex} />
+        <Route exact path="/bins/:id" component={BinShow} />
       </Switch>
     </Router>
   );

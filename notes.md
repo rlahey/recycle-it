@@ -1,14 +1,25 @@
 - finish seeding
-- ensure that seeded bins appear on index page
-- then review code, remove bad code, and commit
-- push up the branch and merge
-- switch to main, and make a new branch for the show page
-- make show page component and routing 
+- DONE: ensure that seeded bins appear on index page
+- DONE: then review code, remove bad code, and commit
+- DONE: push up the branch and merge
+- DONE:switch to main, and make a new branch for the show page
+- DONE: make show page component and routing 
 
-- change the location column to a string of "address"
 
-- on new branch, do an item form
+
+- new branch: 
+- do an item form
+- create a table and model file for the form
+- create a router file for the form
 - see item list on bin show page 
-- be able to delete items from bin 
+- be able to delete items from bin
+- change the location column to a string of "address"
+- styling
 
-- styling 
+new branch:
+-google maps
+
+
+new branch:
+- style sign in and sign up form
+- add links to the nav bar for the form and index page

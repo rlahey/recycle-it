@@ -8,13 +8,13 @@ class Bin extends Model {
     static get jsonSchema() {
         return{
             type: "object",
-            required: ["location", "company", "neighborhood"],
+            required: ["address", "company", "neighborhood"],
             properties: {
-                location: {type: "integer"},//still unsure
+                address: {type: "string"},
                 company: {type: "string"},
                 neighborhood: {type: "string"},
                 imgUrl: {type: ["string"]},
-                relatedInfo: {type: "text"}
+                relatedInfo: {type: "string"}
             }
         }
     }

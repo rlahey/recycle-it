@@ -19,7 +19,7 @@ exports.up = async (knex) => {
       table.string("cryptedPassword").notNullable();
       table.string("userName").notNullable()
       table.string("neighborhood")
-      table.integer("location")
+      table.string("address")
       table.timestamp("createdAt").notNullable().defaultTo(knex.fn.now());
       table.timestamp("updatedAt").notNullable().defaultTo(knex.fn.now());
     });

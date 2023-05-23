@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
-import BinTile from "../components/binTile.js"
+import BinTile from "./BinTile.js"
 
-const binsIndex = (props) => {
+const BinsIndex = (props) => {
     const [bins, setBins] = useState([])
 
     const getBins = async() => {
@@ -45,4 +45,4 @@ const binsIndex = (props) => {
     )
 }
 
-export default binsIndex
+export default BinsIndex

@@ -4,29 +4,30 @@ class BinSeeder{
     static async seed() {
         const binsData = [
             {
-                location: 47,
-                company:"Helpsy",
+                address: "42 Shady Lane",
+                company: "Helpsy",
+                neighborhood: "Brighton",
+                imgUrl: "",
+                relatedInfo: ""
+            },
+            {
+                address: "33 Raymond Street",
+                company: "Helpsy",
                 neighborhood:"Brighton",
                 imgUrl:"",
                 relatedInfo:""
             },
             {
-                location: 45,
-                company:"Helpsy",
-                neighborhood:"Brighton",
-                imgUrl:"",
-                relatedInfo:""
-            },
-            {
-                location: 67,
-                company:"Helpsy",
-                neighborhood:"Brighton",
+                address: "96 Porter Street",
+                company: "Helpsy",
+                neighborhood:"Somerville",
                 imgUrl:"",
                 relatedInfo:""
             }
         ]
+
         for (const singleBinData of binsData) {
-            const currentBin = await Bin.query().findOne({location: singleBinData.location})
+            const currentBin = await Bin.query().findOne({address: singleBinData.address})
             if(!currentBin){
                 await Bin.query().insert(singleBinData)
             }
