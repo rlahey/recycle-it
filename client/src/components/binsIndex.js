@@ -1,27 +1,31 @@
 import React, {useState, useEffect} from "react"
 import BinTile from "./BinTile.js"
 
+
 const BinsIndex = (props) => {
-    const [bins, setBins] = useState([])
+    //import { Redirect } from "react-router-dom"
+        //debugger
+        const [bins, setBins] = useState([])
 
-    const getBins = async() => {
-        try{
-            const response = await fetch (`/api/v1/bins`)
-            if(!response.ok) {
-                const errorMessage = `${response.status} (${response.statusText})`
-                const error = new Error(errorMessage)
-                throw(error)
+        const getBins = async() => {
+            try{
+                const response = await fetch (`/api/v1/bins`)
+                if(!response.ok) {
+                    const errorMessage = `${response.status} (${response.statusText})`
+                    const error = new Error(errorMessage)
+                    throw(error)
+                }
+                const body = await response.json()
+                console.log(body)
+                setBins(body.bins)
+            } catch(err) {
+                console.log(`Error in Fetch: ${err.message}`)
             }
-            const body = await response.json()
-            setBins(body.bins)
-        } catch(err) {
-            console.log(`Error in Fetch: ${err.message}`)
         }
-    }
 
-    useEffect(() => {
-        getBins()
-    }, [])
+        useEffect(() => {
+            getBins()
+        }, [])
 
     const binTiles = bins.map(bin => {
         return(
@@ -39,7 +43,7 @@ const BinsIndex = (props) => {
 
     return(
         <div>
-            <h1>Drop Off Bins</h1>
+            <h1 className="drop-off-bins">Drop Off Bins</h1>
             {binTiles}
         </div> 
     )

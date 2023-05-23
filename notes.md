@@ -4,6 +4,8 @@
 - DONE: push up the branch and merge
 - DONE:switch to main, and make a new branch for the show page
 - DONE: make show page component and routing 
+- styling 
+
 
 
 
@@ -23,3 +25,9 @@ new branch:
 new branch:
 - style sign in and sign up form
 - add links to the nav bar for the form and index page
+- be able to delete items from bin 
+- change the location column to a string of "address"
+-add a column for what can be recycled "string" or "text" add to seeder after 
+
+next branch:
+-google maps integration 
