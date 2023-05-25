@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 const BinTile = (props) => {
-    const { company, neighborhood, imgUrl, id } = props
+    const { company, neighborhood, id } = props
     return(
-        <li>
+        <div className="links-to-showpage">
             <Link to={`/bins/${id}`}>
-                {company} {neighborhood} 
+                {company} {neighborhood}
             </Link>
-        </li>
+        </div>
     )
 }
 export default BinTile

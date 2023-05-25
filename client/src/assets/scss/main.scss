@@ -25,19 +25,9 @@
   width: 50%;
 }
 
-.links {
-  border: solid;
-  border-radius: 10px;
-  width: 30%;
-  padding: 20px;
-  margin: 30px;
-  background-color: white;
-  color: green
-}
-
-.link-color{
-  color: green
-}
+// .link-color{
+//   color: green;
+// }
 
 body {
   background-image: url(https://publicinterestnetwork.org/wp-content/uploads/2021/03/waste_is_out_of_fashion_shutterstock-1500x844.jpg);
@@ -50,3 +40,12 @@ body {
   tab-size: 4;
 }
 
+.links-to-showpage {
+  border: solid;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  margin: 30px;
+  background-color: white;
+  color: green;
+} 

@@ -11,7 +11,7 @@
 
 - new branch: 
 - do an item form
-- create a table and model file for the form
+- create a table and model file for the user
 - create a router file for the form
 - see item list on bin show page 
 - be able to delete items from bin
