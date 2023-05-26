@@ -1,30 +1,31 @@
 import React, {useState, useEffect} from "react"
-import BinTile from "../components/binTile.js"
-//import { Redirect } from "react-router-dom"
+import BinTile from "./BinTile.js"
 
-const binsIndex = (props) => {
-    //debugger
-    const [bins, setBins] = useState([])
 
-    const getBins = async() => {
-        try{
-            const response = await fetch (`/api/v1/bins`)
-            if(!response.ok) {
-                const errorMessage = `${response.status} (${response.statusText})`
-                const error = new Error(errorMessage)
-                throw(error)
+const BinsIndex = (props) => {
+    //import { Redirect } from "react-router-dom"
+        //debugger
+        const [bins, setBins] = useState([])
+
+        const getBins = async() => {
+            try{
+                const response = await fetch (`/api/v1/bins`)
+                if(!response.ok) {
+                    const errorMessage = `${response.status} (${response.statusText})`
+                    const error = new Error(errorMessage)
+                    throw(error)
+                }
+                const body = await response.json()
+                console.log(body)
+                setBins(body.bins)
+            } catch(err) {
+                console.log(`Error in Fetch: ${err.message}`)
             }
-            const body = await response.json()
-            console.log(body)
-            setBins(body.bins)
-        } catch(err) {
-            console.log(`Error in Fetch: ${err.message}`)
         }
-    }
 
-    useEffect(() => {
-        getBins()
-    }, [])
+        useEffect(() => {
+            getBins()
+        }, [])
 
     const binTiles = bins.map(bin => {
         return(
@@ -41,11 +42,11 @@ const binsIndex = (props) => {
     })
 
     return(
-        <div>
-            <h1 className="drop-off-bins">Drop Off Bins</h1>
+        <div className="drop-off-bins">
+            <h1>Drop Off Bins</h1>
             {binTiles}
         </div> 
     )
 }
 
-export default binsIndex
+export default BinsIndex

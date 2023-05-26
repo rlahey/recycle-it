@@ -1,17 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const binTile = (props) => {
-    //debugger
-    const { company, neighborhood, imgUrl } = props
-    const id = props.id
+const BinTile = (props) => {
+    const { company, neighborhood, id } = props
     return(
-        <div className="links">
-            <Link to={`/bins/${id}`} className="link-color">
-            <br></br>
-            {company} {neighborhood} {imgUrl}
+        <div className="links-to-showpage">
+            <Link to={`/items/${id}`}>
+                {company} {neighborhood}
             </Link>
-            </div>
+        </div>
     )
 }
-export default binTile
+export default BinTile

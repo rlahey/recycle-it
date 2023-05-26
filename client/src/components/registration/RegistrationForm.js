@@ -7,6 +7,7 @@ import translateServerErrors from "../../services/translateServerErrors";
 const RegistrationForm = () => {
   const [userPayload, setUserPayload] = useState({
     email: "",
+    userName: "",
     password: "",
     passwordConfirmation: "",
   });
@@ -109,6 +110,13 @@ const RegistrationForm = () => {
             Email
             <input type="text" name="email" value={userPayload.email} onChange={onInputChange} />
             <FormError error={errors.email} />
+          </label>
+        </div>
+        <div>
+          <label>
+            Username
+            <input type="text" name="userName" value={userPayload.userName} onChange={onInputChange} />
+            <FormError error={errors.userName} />
           </label>
         </div>
         <div>

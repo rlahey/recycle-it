@@ -1,3 +1,3 @@
 import Seeder from "../src/db/Seeder.js"
 
-await Seeder.Seed()
+await Seeder.seed()

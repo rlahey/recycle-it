@@ -32,11 +32,12 @@ const BinShow = (props) => {
     useEffect(()=> {
         getBins()
     }, [])
+
     return(
         <div className="bin-info-show-page">
-        <h1>Info On This Bin:</h1>
-        <h2>Company: {bins.company}</h2>
-        <p>Related Info: {bins.relatedInfo}</p>
+            <h1>Info On This Bin:</h1>
+            <h2>Company: {bins.company}</h2>
+            <p>Related Info: {bins.relatedInfo}</p>
         </div>
     )
 }
