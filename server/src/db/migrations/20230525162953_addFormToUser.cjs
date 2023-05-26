@@ -7,7 +7,7 @@
  */
 exports.up = async (knex) => {
     return knex.schema.table("users", (table) => {
-        table.boolean("hasItemToDonate")
+        table.boolean("hasItemToDonate").default(false).notNullable()
     })
 }
 

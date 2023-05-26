@@ -9,6 +9,8 @@ import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import BinsIndex from "./BinsIndex";
 import BinShow from "./BinShow";
+import ItemForm from "./ItemForm";
+import ItemIndex from "./ItemsIndex"
 
 
 const App = (props) => {
@@ -37,6 +39,8 @@ const App = (props) => {
         <Route exact path="/user-sessions/new" component={SignInForm} />
         <Route exact path="/bins" component={BinsIndex} />
         <Route exact path="/bins/:id" component={BinShow} />
+        <Route exact path="/items/new" component={ItemForm} />
+        <Route exact path="/items" component={ItemIndex} />
       </Switch>
     </Router>
   );

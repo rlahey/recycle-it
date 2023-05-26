@@ -5,7 +5,7 @@ const BinTile = (props) => {
     const { company, neighborhood, id } = props
     return(
         <div className="links-to-showpage">
-            <Link to={`/bins/${id}`}>
+            <Link to={`/items/${id}`}>
                 {company} {neighborhood}
             </Link>
         </div>

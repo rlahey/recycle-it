@@ -8,11 +8,14 @@ const ItemForm = (props) => {
         address: "",
     })
 
+    // add redirect state
+    // if statement that checks redirect state and renders a redirect component if the state is true
+
     const addItemForm = async event => {
         const itemFormBody = new FormData()
 
         try{
-            const response = await fetch ("/api/v1/form", {
+            const response = await fetch ("/api/v1/items/new", {//should this change to "/item"? form was there
                 method: "POST",
                 headers: new Headers({
                     "Content-Type": "application/json"
@@ -38,11 +41,12 @@ const ItemForm = (props) => {
                 console.error(`Error in ItemForm fetch: ${err.message}`)
             }
         }
+
         const handleInputChange = (event) => {
             event.preventDefault()
             setItemForm({
                 ...itemForm,
-                [event.currentTarget.anme]: event.currentTarget.value
+                [event.currentTarget.name]: event.currentTarget.value
             })
         }
 
@@ -65,7 +69,14 @@ const ItemForm = (props) => {
                     >
                     </input>
                 </label>
+                <div>
+                    <input
+                    className="button" type="submit" value="Submit"
+                    />
+                </div>
             </form>
         </>
     )
 }
+
+export default ItemForm
