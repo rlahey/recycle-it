@@ -20,6 +20,7 @@ new branch:
 - google maps
 - see items on google map <--- not part of app
 - be able to delete items from bin
+- add redirect state to form file bc i forgot to do it in my last PR
 
 
 new branch:
@@ -28,7 +29,11 @@ new branch:
 - add links to the nav bar for the form and index page
 - be able to delete items from item list (might just be a button?)
 - DONE: change the location column to a string of "address"
-- add a column for what can be recycled "string" or "text" add to seeder after 
+- add a column for what can be recycled "string" or "text" add to seeder after
+
+new branch:
+- finish styling
+- find a new background image and make it small
 
 DONE:
 
