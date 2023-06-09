@@ -11,6 +11,7 @@ import BinsIndex from "./BinsIndex";
 import BinShow from "./BinShow";
 import ItemForm from "./ItemForm";
 import ItemIndex from "./ItemsIndex"
+import GoogleMap from "./googleMaps";
 
 
 const App = (props) => {
@@ -41,6 +42,7 @@ const App = (props) => {
         <Route exact path="/bins/:id" component={BinShow} />
         <Route exact path="/items/new" component={ItemForm} />
         <Route exact path="/items" component={ItemIndex} />
+        <Route exact path="/items" component={GoogleMap} />
       </Switch>
     </Router>
   );

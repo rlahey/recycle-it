@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 //import ItemForm from "./components/ItemForm"
 import ItemsTile from "./BinTile"
+import GoogleMap from "./googleMaps"
 
 const itemIndex = (props) => {
     const [items, setItems] = useState([{
@@ -63,6 +64,7 @@ const itemIndex = (props) => {
         <div>
             <h1>See what clothing is up for grabs near you</h1>
             {itemTiles}
+            {GoogleMap}
         </div>
     )
 }
