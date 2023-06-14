@@ -76,7 +76,7 @@ const SignInForm = () => {
   }
 
   return (
-    <div className="grid-container">
+    <div className="grid-container forms">
       <h1>Sign In</h1>
       {credentialsErrors ? <p className="callout alert">{credentialsErrors}</p> : null}
       <form onSubmit={onSubmit}>
