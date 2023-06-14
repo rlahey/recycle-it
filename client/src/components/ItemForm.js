@@ -58,7 +58,7 @@ const ItemForm = (props) => {
         <>
             <h1>What Do You Want To Swap?</h1>
             <p>Please only swap items that are in good condition.  Please refrain from swapping items that have holes or stains</p>
-            <form onSubmit={handleSubmit}>
+            <form className="forms" onSubmit={handleSubmit}>
                 <label>
                     Item Type:
                     <input
