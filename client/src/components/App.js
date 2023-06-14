@@ -11,6 +11,7 @@ import BinsIndex from "./BinsIndex";
 import BinShow from "./BinShow";
 import ItemForm from "./ItemForm";
 import ItemIndex from "./ItemsIndex"
+import Homepage from "./Homepage";
 
 
 const App = (props) => {
@@ -32,8 +33,7 @@ const App = (props) => {
     <Router>
       <TopBar user={currentUser} />
       <Switch>
-        <Route exact path="/">
-          <h2>Homepage where I tell the user what my app is all about</h2>
+        <Route exact path="/" component={Homepage}>
         </Route>
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
