@@ -30,7 +30,7 @@
 // }
 
 body {
-  background-image: url(https://publicinterestnetwork.org/wp-content/uploads/2021/03/waste_is_out_of_fashion_shutterstock-1500x844.jpg);
+  background-image: url(https://www.twi-global.com/image-library/hero/sustainability-istock-473558826.jpg);
   z-index: -1;
   font-family: Montserrat, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 }
@@ -51,6 +51,14 @@ body {
 } 
 
 .forms {
+  border: solid;
+  border-radius: 10px;
+  background-color: white;
+  margin: 100px;
+  padding: 40px;
+}
+
+.homepage {
   border: solid;
   border-radius: 10px;
   background-color: white;
