@@ -12,7 +12,7 @@ const itemIndex = (props) => {
     const getItems = async () => {
         const itemId = props.match.params.id
         try{
-            const response = await fetch(`/api/v1/items/${itemId}`)
+            const response = await fetch(`/api/v1/items/${itemId}`)//
             if(!response.ok) {
                 const errorMessage = `${response.status} (${response.statusText})`
                 const error = new Error(errorMessage)
